@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="assets/css/color.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-icons/bootstrap-icons.css" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Tamplate go imports</title>
+</head>
+
+<body style="background-color: #f5f5f5;">
+    <header class="navbar-light header-sticky">
+
+        <!-- Inicio do nav -->
+        <nav class="navbar navbar-expand-md .header-space z-index-9 d-flex justify-content-center">
+            <div class="d-flex">
+
+                <!-- Inicio da logo -->
+                <a class="navbar-brand" href="#">
+                    <img class="light-mode-item navbar-brand-item" src="assets/images/logo.svg" alt="logo">
+                    <img class="dark-mode-item navbar-brand-item" src="assets/images/logo-light.svg" alt="logo">
+                </a>
+                <!-- Final da logo -->
+
+                <!-- Responsividade do navbar toggler -->
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="bi bi-search fs-4"> </i>
+                </button>
+
+                <!-- Responsividade do navbar toggler -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse2"
+                    aria-controls="navbarCollapse2" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-animation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+
+                <!-- Main navbar START -->
+                <div class="navbar-collapse collapse justify-content-center" id="navbarCollapse">
+
+                    <!-- Inicio da busca -->
+                    <div class="col-xxl-6 justify-content-center">
+                        <div class="nav my-3 my-xl-0 px-md-7 flex-nowrap align-items-center">
+                            <div class="nav-item w-100 d-flex justify-content-center">
+                                <form class="rounded position-relative" style="width: 25em;">
+                                    <input class="form-control pe-5 bg-secundary bg-opacity-10 rounded-5"
+                                        style="padding-right: 3rem;" type="search" placeholder="Search"
+                                        aria-label="Search">
+                                    <button
+                                        class="btn btn-link bg-transparent py-0 position-absolute top-50 end-0 translate-middle-y"
+                                        type="submit"><i class="fas fa-search fs-6 text-dark"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Final da busca -->
+
+                </div>
+                <!-- Main navbar END -->
+
+                <!-- Inicio do perfil e notificação -->
+                <ul class="nav flex-row align-items-center list-unstyled ms-xl-auto">
+
+                    <!-- Inicio do dropdown -->
+                    <li class="nav-item ms-0 ms-md-3 dropdown">
+
+                        <!-- Botão de notificação -->
+                        <a class="nav-notification btn btn-light p-0 mb-0 rounded-circle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                            <i class="bi bi-bell fa-fw"></i>
+                        </a>
+
+                        <!-- Ponto da notificação -->
+                        <span class="notif-badge animation-blink"></span>
+
+                        <!-- Inicio do dropdown do menu de notificação -->
+                        <div
+                            class="dropdown-menu dropdown-animation dropdown-menu-end dropdown-menu-size-md p-0 shadow-lg">
+                            <div class="card bg-transparent">
+
+                                <!-- Card header -->
+                                <div
+                                    class="card-header bg-transparent d-flex justify-content-between align-items-center border-bottom">
+                                    <h6 class="m-0">Notifications <span
+                                            class="badge bg-danger bg-opacity-10 text-danger ms-2">4 new</span></h6>
+                                    <a class="small" href="#">Clear all</a>
+                                </div>
+
+                                <!-- Card body START -->
+                                <div class="card-body p-0">
+                                    <ul class="list-group list-group-flush list-unstyled p-2">
+
+                                        <!-- Notification item -->
+                                        <li>
+                                            <a href="#"
+                                                class="list-group-item list-group-item-action rounded notif-unread border-0 mb-1 p-3">
+                                                <h6 class="mb-2">New! Booking flights from New York ✈️</h6>
+                                                <p class="mb-0 small">Find the flexible ticket on flights around the
+                                                    world. Start searching today</p>
+                                                <span>Wednesday</span>
+                                            </a>
+                                        </li>
+
+                                        <!-- Notification item -->
+                                        <li>
+                                            <a href="#"
+                                                class="list-group-item list-group-item-action rounded border-0 mb-1 p-3">
+                                                <h6 class="mb-2">Sunshine saving are here 🌞 save 30% or more on a stay
+                                                </h6>
+                                                <span>15 Nov 2022</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Card body END -->
+
+                                <!-- Card footer -->
+                                <div class="card-footer bg-transparent text-center border-top">
+                                    <a href="#" class="btn btn-sm btn-link mb-0 p-0">See all incoming activity</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Inicio do dropdown do menu de notificação -->
+
+                    </li>
+                    <!-- Final do dropdown da notificação -->
+
+                    <!-- Inicio do dropdown do perfil -->
+                    <li class="nav-item ms-3 dropdown">
+
+                        <!-- Avatar -->
+                        <a class="avatar avatar-sm p-0" href="#" id="profileDropdown" role="button"
+                            data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img class="avatar-img rounded-2 rounded-circle" src="assets/images/avatar/02.jpg"
+                                alt="avatar">
+                        </a>
+
+                        <!-- Inicio do dropdown do perfil -->
+                        <ul class="dropdown-menu dropdown-animation dropdown-menu-end shadow pt-3"
+                            aria-labelledby="profileDropdown">
+
+                            <!-- Profile info -->
+                            <li class="px-3 mb-3">
+                                <div class="d-flex align-items-center">
+
+                                    <!-- Avatar -->
+                                    <div class="avatar me-3">
+                                        <img class="avatar-img rounded-circle shadow" src="assets/images/avatar/02.jpg"
+                                            alt="avatar">
+                                    </div>
+                                    <div>
+                                        <a class="h6 mt-2 mt-sm-0" href="#">Lori Ferguson</a>
+                                        <p class="small m-0">example@gmail.com</p>
+                                    </div>
+                                </div>
+                            </li>
+
+                            <!-- Links -->
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-bookmark-check fa-fw me-2"></i>My
+                                    Bookings</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-heart fa-fw me-2"></i>My Wishlist</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear fa-fw me-2"></i>Settings</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-info-circle fa-fw me-2"></i>Help
+                                    Center</a></li>
+                            <li><a class="dropdown-item bg-danger-soft-hover" href="#"><i
+                                        class="bi bi-power fa-fw me-2"></i>Sign Out</a></li>
+
+                        </ul>
+                        <!-- Profile dropdown END -->
+
+                    </li>
+                    <!-- Final do dropdown do perfil -->
+
+                </ul>
+                <!-- Profile and notification END -->
+
+            </div>
+        </nav>
+
+        <!-- Final da navegação -->
+        <div style="height: 0.5em; background-color: white;"></div>
+        <!-- Inicio do menu principal -->
+        <nav class="navbar navbar-expand-md bg-dark ">
+            <div class="container px-0">
+
+                <!-- Inicio da principal navbar -->
+                <div class="navbar-collapse w-100 collapse" id="navbarCollapse2">
+
+                    <!-- Inicio da navegação principal -->
+                    <ul class="navbar-nav navbar-nav-scroll mx-auto">
+
+                        <!-- Nav item -->
+                        <li class="nav-item d-flex align-items-center hover"> <a
+                                class="nav-link bg-nav-active rounded-5" style="color: black;" href="#">Todas
+                                categorias</a> </li>
+
+                        <!-- Nav item -->
+                        <li class="nav-item hover"> <a class="nav-link" style="color: white;" href="#">Categoria</a>
+                        </li>
+
+                        <!-- Nav item -->
+                        <li class="nav-item hover"> <a class="nav-link" style="color: white;" href="#">Categoria</a>
+                        </li>
+
+                        <!-- Nav item -->
+                        <li class="nav-item hover"> <a class="nav-link" style="color: white;" href="#">Categoria</a>
+                        </li>
+
+                        <!-- Nav item -->
+                        <li class="nav-item hover"> <a class="nav-link" style="color: white;" href="#">Categoria</a>
+                        </li>
+
+                        <!-- Nav item -->
+                        <li class="nav-item hover"> <a class="nav-link" style="color: white;" href="#">Categoria</a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- Final da principal navbar -->
+            </div>
+        </nav>
+        <!-- Final do menu principal -->
+    </header>
+
+
+
+    <main style="background-color: white;">
+
+        <div class="container">
+
+            <div id="content" class="mb-5 pt-5">
+                <div id="filterbar" class="ps-2 py-4 rounded-2 mb-5 bg-light container" style="width: 10rem; display: inline-block; vertical-align: top;">
+                    <div class="box border-bottom">
+                        <div class="box-label text-uppercase d-flex align-items-center">Outerwear
+                            <button class="btn ml-auto" type="button" data-toggle="collapse" data-target="#inner-box"
+                                aria-expanded="false" aria-controls="inner-box" id="out" onclick="outerFilter()">
+                                <span class="fas fa-plus">
+                                </span>
+                            </button>
+                        </div>
+                        <div id="inner-box" class="collapse mt-2 mr-1">
+                            <div class="my-1">
+                                <input type="checkbox">
+                                <label class="tick">Windbreaker
+                                    
+                                    <span class="check">
+
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="my-1">
+                                <input type="checkbox">
+                                <label class="tick">Jumpsuit
+                                    
+                                    <span class="check">
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="my-1">
+                                <input type="checkbox">
+                                <label class="tick">Jacket 
+                                    <span class="check">
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="my-1">
+                                <input type="checkbox">
+                                <label class="tick">Coat
+                                    
+                                    <span class="check">
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="my-1">
+                                <input type="checkbox">
+                                <label class="tick">Raincoat
+                                   
+                                    <span class="check">
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="my-1">
+                                <input type="checkbox">
+                                <label class="tick">Handbag
+                                    
+                                    <span class="check">
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="my-1">
+                                <input type="checkbox">
+                                <label class="tick">Warm vest
+                                    
+                                    <span class="check">
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="my-1">
+                                <input type="checkbox">
+                                <label class="tick">Wallets
+                                    
+                                    <span class="check">
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box border-bottom">
+                        <div class="box-label text-uppercase d-flex align-items-center">season
+                            <button class="btn ml-auto" type="button" data-toggle="collapse" data-target="#inner-box2"
+                                aria-expanded="false" aria-controls="inner-box2">
+                                <span class="fas fa-plus">
+                                </span>
+                            </button>
+                        </div>
+                        <div id="inner-box2" class="collapse mt-2 mr-1">
+                            <div class="my-1">
+                                <input type="checkbox">
+                                <label class="tick">Spring
+                                    
+                                    <span class="check">
+
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="my-1">
+                                <input type="checkbox">
+                                <label class="tick">Summer
+                                    
+                                    <span class="check">
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="my-1">
+                                <input type="checkbox">
+                                <label class="tick">Autumn
+                                  
+                                    <span class="check">
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="my-1">
+                                <input type="checkbox">
+                                <label class="tick">Winter
+                                  
+                                    <span class="check">
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="my-1">
+                                <input type="checkbox">
+                                <label class="tick">Rainy
+                                
+                                    <span class="check">
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box border-bottom">
+                        <div class="box-label text-uppercase d-flex align-items-center">price
+                            <button class="btn ml-auto" type="button" data-toggle="collapse" data-target="#price"
+                                aria-expanded="false" aria-controls="price">
+                                <span class="fas fa-plus"></span>
+                            </button>
+                        </div>
+                        <div class="collapse" id="price">
+                            <div class="middle">
+                                <div class="multi-range-slider">
+                                    <input type="range" id="input-left" min="0" max="100" value="10">
+                                    <input type="range" id="input-right" min="0" max="100" value="50">
+                                    <div class="slider">
+                                        <div class="track"></div>
+                                        <div class="range"></div>
+                                        <div class="thumb left"></div>
+                                        <div class="thumb right"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between mt-2">
+                                <div class="ms-1"> <span id="amount-left" class="font-weight-bold"></span> R$ </div>
+                                <div class="me-6"> <span id="amount-right" class="font-weight-bold"></span> R$ </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box-label text-uppercase d-flex align-items-center">size
+                            <button class="btn ml-auto" type="button" data-toggle="collapse" data-target="#size"
+                                aria-expanded="false" aria-controls="size">
+                                <span class="fas fa-plus">
+
+                                </span>
+                            </button>
+                        </div>
+                        <div id="size" class="collapse">
+                            <div class="btn-group d-flex align-items-center flex-wrap" data-toggle="buttons">
+                                <label class="btn btn-success form-check-label rounded-2 me-3">
+                                    <input class="form-check-input" type="checkbox"> 80
+                                </label>
+                                <label class="btn btn-success form-check-label rounded-2 me-3">
+                                    <input class="form-check-input" type="checkbox" checked=""> 92
+                                </label>
+                                <label class="btn btn-success form-check-label rounded-2 me-3">
+                                    <input class="form-check-input" type="checkbox" checked=""> 102
+                                </label>
+                                <label class="btn btn-success form-check-label rounded-2 me-3">
+                                    <input class="form-check-input" type="checkbox" checked=""> 104
+                                </label> <label class="btn btn-success form-check-label rounded-2 me-3">
+                                    <input class="form-check-input" type="checkbox" checked=""> 106
+                                </label> <label class="btn btn-success form-check-label rounded-2 me-3">
+                                    <input class="form-check-input" type="checkbox" checked=""> 108
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="cards" class=" mb-4" style="width: 55rem; display: inline-block; vertical-align: top;">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-3 mb-2">
+                            <a href="#">
+                                <div class="card border rounded-5">
+                                    <div class="card-body">
+                                        <div class="card-img-actions">
+                                            <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1562074043/234.png"
+                                                class="card-img img-fluid" width="96" height="350" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="card-body bg-light text-center rounded-bottom-5">
+                                        <div class="mb-2">
+                                            <h6 class="font-weight-semibold mb-2">
+                                                <a href="#" class="text-default mb-2" data-abc="true">Toshiba
+                                                    Notebook</a>
+                                            </h6>
+                                        </div>
+                                        <h5 class="mb-0 font-weight-semibold">$250.99</h5>
+                                        <div>
+                                            <i class="fa fa-star star"></i>
+                                            <i class="fa fa-star star"></i>
+                                            <i class="fa fa-star star"></i>
+                                            <i class="fa fa-star star"></i>
+                                        </div>
+                                        <div class="text-muted mb-2">34 reviews</div>
+                                        <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i>
+                                            Add
+                                            to cart</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3 mb-2">
+                            <a href="#">
+                                <div class="card border rounded-5">
+                                    <div class="card-body">
+                                        <div class="card-img-actions">
+                                            <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1562074043/234.png"
+                                                class="card-img img-fluid" width="96" height="350" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="card-body bg-light text-center rounded-bottom-5">
+                                        <div class="mb-2">
+                                            <h6 class="font-weight-semibold mb-2">
+                                                <a href="#" class="text-default mb-2" data-abc="true">Toshiba
+                                                    Notebook</a>
+                                            </h6>
+                                        </div>
+                                        <h5 class="mb-0 font-weight-semibold">$250.99</h5>
+                                        <div>
+                                            <i class="fa fa-star star"></i>
+                                            <i class="fa fa-star star"></i>
+                                            <i class="fa fa-star star"></i>
+                                            <i class="fa fa-star star"></i>
+                                        </div>
+                                        <div class="text-muted mb-2">34 reviews</div>
+                                        <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i>
+                                            Add
+                                            to cart</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3 mb-2">
+                            <a href="#">
+                                <div class="card border rounded-5">
+                                    <div class="card-body">
+                                        <div class="card-img-actions">
+                                            <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1562074043/234.png"
+                                                class="card-img img-fluid" width="96" height="350" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="card-body bg-light text-center rounded-bottom-5">
+                                        <div class="mb-2">
+                                            <h6 class="font-weight-semibold mb-2">
+                                                <a href="#" class="text-default mb-2" data-abc="true">Toshiba
+                                                    Notebook</a>
+                                            </h6>
+                                        </div>
+                                        <h5 class="mb-0 font-weight-semibold">$250.99</h5>
+                                        <div>
+                                            <i class="fa fa-star star"></i>
+                                            <i class="fa fa-star star"></i>
+                                            <i class="fa fa-star star"></i>
+                                            <i class="fa fa-star star"></i>
+                                        </div>
+                                        <div class="text-muted mb-2">34 reviews</div>
+                                        <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i>
+                                            Add
+                                            to cart</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3 mb-2">
+                            <a href="#">
+                                <div class="card border rounded-5">
+                                    <div class="card-body">
+                                        <div class="card-img-actions">
+                                            <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1562074043/234.png"
+                                                class="card-img img-fluid" width="96" height="350" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="card-body bg-light text-center rounded-bottom-5">
+                                        <div class="mb-2">
+                                            <h6 class="font-weight-semibold mb-2">
+                                                <a href="#" class="text-default mb-2" data-abc="true">Toshiba
+                                                    Notebook</a>
+                                            </h6>
+                                        </div>
+                                        <h5 class="mb-0 font-weight-semibold">$250.99</h5>
+                                        <div>
+                                            <i class="fa fa-star star"></i>
+                                            <i class="fa fa-star star"></i>
+                                            <i class="fa fa-star star"></i>
+                                            <i class="fa fa-star star"></i>
+                                        </div>
+                                        <div class="text-muted mb-2">34 reviews</div>
+                                        <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i>
+                                            Add
+                                            to cart</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <!-- Produtos a serem ocultados quando em smartphone -->
+                    <div class="row pt-4">
+                        <div class="col-sm-6 col-md-3 mb-2 d-none d-md-block">
+                            <a href="">
+                                <div class="card border rounded-5">
+                                    <div class="card-body">
+                                        <div class="card-img-actions">
+                                            <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1562074043/234.png"
+                                                class="card-img img-fluid" width="96" height="350" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="card-body bg-light text-center rounded-bottom-5">
+                                        <div class="mb-2">
+                                            <h6 class="font-weight-semibold mb-2">
+                                                <a href="#" class="text-default mb-2" data-abc="true">Toshiba
+                                                    Notebook</a>
+                                            </h6>
+                                        </div>
+                                        <h5 class="mb-0 font-weight-semibold">$250.99</h5>
+                                        <div>
+                                            <i class="fa fa-star star"></i>
+                                            <i class="fa fa-star star"></i>
+                                            <i class="fa fa-star star"></i>
+                                            <i class="fa fa-star star"></i>
+                                        </div>
+                                        <div class="text-muted mb-3">34 reviews</div>
+                                        <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i>
+                                            Add to
+                                            cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3 mb-2 d-none d-md-block">
+                            <a href="">
+                                <div class="card border rounded-5">
+                                    <div class="card-body">
+                                        <div class="card-img-actions">
+                                            <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1562074043/234.png"
+                                                class="card-img img-fluid" width="96" height="350" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="card-body bg-light text-center rounded-bottom-5">
+                                        <div class="mb-2">
+                                            <h6 class="font-weight-semibold mb-2">
+                                                <a href="#" class="text-default mb-2" data-abc="true">Toshiba
+                                                    Notebook</a>
+                                            </h6>
+                                        </div>
+                                        <h5 class="mb-0 font-weight-semibold">$250.99</h5>
+                                        <div>
+                                            <i class="fa fa-star star"></i>
+                                            <i class="fa fa-star star"></i>
+                                            <i class="fa fa-star star"></i>
+                                            <i class="fa fa-star star"></i>
+                                        </div>
+                                        <div class="text-muted mb-3">34 reviews</div>
+                                        <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i>
+                                            Add to
+                                            cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-sm-6 col-md-3 mb-2 d-none d-md-block">
+                            <a href="">
+                                <div class="card border rounded-5">
+                                    <div class="card-body">
+                                        <div class="card-img-actions">
+                                            <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1562074043/234.png"
+                                                class="card-img img-fluid" width="96" height="350" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="card-body bg-light text-center rounded-bottom-5">
+                                        <div class="mb-2">
+                                            <h6 class="font-weight-semibold mb-2">
+                                                <a href="#" class="text-default mb-2" data-abc="true">Toshiba
+                                                    Notebook</a>
+                                            </h6>
+                                        </div>
+                                        <h5 class="mb-0 font-weight-semibold">$250.99</h5>
+                                        <div>
+                                            <i class="fa fa-star star"></i>
+                                            <i class="fa fa-star star"></i>
+                                            <i class="fa fa-star star"></i>
+                                            <i class="fa fa-star star"></i>
+                                        </div>
+                                        <div class="text-muted mb-3">34 reviews</div>
+                                        <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i>
+                                            Add to
+                                            cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class=" col-sm-6 col-md-3 mb-2 d-none d-md-block">
+                            <a href="">
+                                <div class="card border rounded-5">
+                                    <div class="card-body">
+                                        <div class="card-img-actions">
+                                            <img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1562074043/234.png"
+                                                class="card-img img-fluid" width="96" height="350" alt="">
+                                        </div>
+                                    </div>
+
+                                    <div class="card-body bg-light text-center rounded-bottom-5">
+                                        <div class="mb-2">
+                                            <h6 class="font-weight-semibold mb-2">
+                                                <a href="#" class="text-default mb-2" data-abc="true">Toshiba
+                                                    Notebook</a>
+                                            </h6>
+                                        </div>
+                                        <h5 class="mb-0 font-weight-semibold">$250.99</h5>
+                                        <div>
+                                            <i class="fa fa-star star"></i>
+                                            <i class="fa fa-star star"></i>
+                                            <i class="fa fa-star star"></i>
+                                            <i class="fa fa-star star"></i>
+                                        </div>
+                                        <div class="text-muted mb-3">34 reviews</div>
+                                        <button type="button" class="btn bg-cart"><i class="fa fa-cart-plus mr-2"></i>
+                                            Add to
+                                            cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="page-container">
+                <div class="rounded d-flex align-items-center justify-content-center" id="header">
+                    <div class="ml-auto mt-3 mr-2">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item"> <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true" class="font-weight-bold">&lt;
+                                        </span>
+                                        <span class="sr-only">Previous
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">..</a></li>
+                                <li class="page-item"><a class="page-link" href="#">24</a></li>
+                                <li class="page-item"> <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true" class="font-weight-bold">&gt;
+                                        </span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </main>
+
+
+
+    <!-- Rodapé -->
+    <footer class="w-100 py-4 flex-shrink-0 bg-dark">
+        <div class="container py-4">
+            <div class="row gy-4 gx-5 justify-content-center">
+                <div class="col-lg-4 col-md-4">
+                    <h5 class="h1 text-white">FB.</h5>
+                    <p class="small text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                        tempor incididunt.</p>
+                    <p class="small text-muted mb-0">&copy; Copyrights. All rights reserved.</p>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="text-white mb-3">Quick links</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Get started</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5 class="text-white mb-3">Quick links</h5>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Get started</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/functions.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+        </script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+        integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+
+    </script>
+
+    <script>
+
+    </script>
+</body>
+
+</html>
